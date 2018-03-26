@@ -27,7 +27,7 @@
     float: left;
     line-height: 26px;
     font-size: 14px;
-    padding-right: 18px;
+    padding-right: 14px;
 }
 .top_bar_last_li{
     padding-right: 0;
@@ -137,43 +137,50 @@
 .second_li {
     position: relative;
     width: 95px;
-    background: url("../../images/second_hover_bg.jpg")no-repeat 0 5px;
     text-align: center;
+    margin-top: 2px;
 }
-
-.second_li ul{
+.hover_list{
+    position: absolute;
     width: 95px;
-    background: url("../../images/second_hover_bg.jpg")no-repeat;
+    z-index: 3;
+    top: 40px;
+    background-color: white;
+    display: none;
+}
+.course_list_one{
+    border-top: 1px solid #e3e3e3;
+}
+.head-title{
+    line-height: 37px;
+}
+.active .hover_list,.second_li:hover .hover_list{
+    display: block;
+}
+.active .head-title ,.second_li:hover .head-title{
+    border-top-left-radius: 8px 10px;
+    border-top-right-radius: 8px 10px;
+    background-color: white;
+    color: #6e529f;
+    display: inline-table;
+    padding: 0 12px;
+}
+.course_list_one{
+    font-size: 18px;
+    color: #fefeff;
 }
 .second_li li{
     width: 95px;
-    position: relative;
-    background: url("../../images/second_hover_bg.jpg")repeat-y  right -190px ;
-
+    text-align: center;
 }
 .course_list a{
     font-size: 16px;
     color: #828081;
     font-weight: normal;
 }
-/*.second_li:hover{*/
-    /*position: relative;*/
-    /*width: 95px;*/
-    /*background: url("../../images/second_hover_bg.jpg")no-repeat 0 5px;*/
-    /*text-align: center;*/
-/*}*/
-/*.course_list ul:hover{*/
-    /*width: 95px;*/
-    /*background: url("../../images/second_hover_bg.jpg")no-repeat*/
-/*}*/
-/*.second_li li:hover{*/
-    /*width: 95px;*/
-    /*position: relative;*/
-    /*background: url("../../images/second_hover_bg.jpg")repeat-y  right -190px ;*/
-/*}*/
 .course_list li{
-    height: 30px;
-    line-height: 30px;
+    height: 38px;
+    line-height: 38px;
     border-bottom: 1px solid  #ededed;
 }
 .course_list a{
@@ -198,6 +205,7 @@
 .eighth_li{
     padding-right: 37px;
 }
+
 .ninth_li{
     width: 155px;
     height: 57px;
@@ -207,22 +215,18 @@
     top: -7px;
     z-index: 3;
 }
-.ninth_li a{
-   margin-left: 10px;
+.ninth_li a {
+    margin-left: 10px;
     line-height: 57px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.eighth_li_hover{
+    position: absolute;
+}
+.eighth_li_hover ul{}
+.eighth_li_hover li{}
+.eighth_li_hover a{
+    color: black;
+}
 
 
 
