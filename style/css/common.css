@@ -223,9 +223,6 @@
     position: relative;
     width: 100px;
 }
-.eighth_li:hover{
-    /*display: block;*/
-}
 .eighth_li_hover ul{
     width: 100px;
 }
@@ -255,23 +252,24 @@
     z-index: 5;
     display: none;
 }
-.eighth_li:hover> .eighth_li_hover{
 
-    display: block;
-}
 .eighth_li_hover a{
     color: #828081;
     font-size: 16px;
     font-weight: normal;
 }
-.eighth_li_hover a:hover{
-    color:#6e529f ;
+.active .eighth_li_hover a:hover{
     font-weight: bold;
 }
-.active .eighth_li_hover:hover ,.eighth_li_active,.eighth_li_act {
+.eighth_li:hover> .eighth_li_hover,.eighth_li_act{
+    display: block;
+}
+.active .eighth_li_hover:hover ,.eighth_li .eighth_li_act {
     display: inline-table;
 }
-
+.eighth_li_hover:hover,.eighth_li_act .eighth_li{
+    display: block;
+}
 
 
 
