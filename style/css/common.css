@@ -202,9 +202,6 @@
 .seventh_li{
     padding: 0 30px 0 45px;
 }
-.eighth_li{
-    padding-right: 37px;
-}
 
 .ninth_li{
     width: 155px;
@@ -219,17 +216,61 @@
     margin-left: 10px;
     line-height: 57px;
 }
+
+
+
+.eighth_li{
+    position: relative;
+    width: 100px;
+}
+.eighth_li:hover{
+    /*display: block;*/
+}
+.eighth_li_hover ul{
+    width: 100px;
+}
+.eighth_li_hover li{
+    height: 38px;
+    line-height: 33px;
+    border-bottom: 1px solid  #ededed;
+    padding: 0 12px;
+    /*width: 100px;*/
+}
+.active{
+    padding: 0 12px;
+    /*display: none;*/
+}
+.eighth_li_act:hover {
+    border-top-left-radius: 8px 10px;
+    border-top-right-radius: 8px 10px;
+    background-color: white;
+    color: #6e529f;
+    display: inline-table;
+    padding: 0 12px;
+}
 .eighth_li_hover{
     position: absolute;
+    width: 100px;
+    background: #fff;
+    z-index: 5;
+    display: none;
 }
-.eighth_li_hover ul{}
-.eighth_li_hover li{}
+.eighth_li:hover> .eighth_li_hover{
+
+    display: block;
+}
 .eighth_li_hover a{
-    color: black;
+    color: #828081;
+    font-size: 16px;
+    font-weight: normal;
 }
-
-
-
+.eighth_li_hover a:hover{
+    color:#6e529f ;
+    font-weight: bold;
+}
+.active .eighth_li_hover:hover ,.eighth_li_active,.eighth_li_act {
+    display: inline-table;
+}
 
 
 

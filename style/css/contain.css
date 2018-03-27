@@ -20,7 +20,8 @@
     height: 396px;
 }
 .content_one_itm_left{
-   width: 605px;
+    position: absolute;
+    width: 605px;
     height: 394px;
     float: left;
 }
