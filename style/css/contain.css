@@ -31,18 +31,24 @@
     height: 351px;
     animation: move 15s linear 0s infinite normal;
 }
+.content_one_itm_left ul:hover{
+    animation-play-state: paused;
+
+}
 .content_one_itm_left li{
     float: left;
     list-style: none;
 }
 .content_one_itm_left li:hover{
     opacity: 0.5;
+
 }
 .content_one_itm_left img{
     width: 605px;
     height: 351px;
     background-size: cover;
 }
+
 @keyframes move {
     from{
         margin-left: 0px;

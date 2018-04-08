@@ -19,6 +19,17 @@
                     <li><a href="">星火官方微博</a></li>
                     <li><a href="">校区地址查询</a></li>
                     <li class="top_bar_last_li"><a href="">免费咨询热线：400-111-450</a></li>
+                    <li id="li_more" onclick="show()">更多>></li>
+                    <div class="public_header_more" id="public_header_more">
+                        <ul>
+                            <li><a href="">更多内容</a></li>
+                            <li><a href="">更多内容</a></li>
+                            <li><a href="">更多内容</a></li>
+                            <li><a href="">更多内容</a></li>
+                            <li><a href="">更多内容</a></li>
+                        </ul>
+                    </div>
+
                 </ul>
             </div>
             <div class="public_header_top_box">
@@ -33,18 +44,16 @@
                     <div class="select_school">
                         <div class="select_lable">
                             <form action="">
-                                <span>选择城市</span><select class="select_one">
-                                    <option value ="选择城市"></option>
-                                    <option value ="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
+                                <select class="select_one" id="city" onchange="oCity()">
+                                    <option value ="-1">请选择城市</option>
+                                    <option value ="0">花溪区</option>
+                                    <option value="1">云岩区</option>
+                                    <option value="2">南明区</option>
+                                    <option value="3">观山湖区</option>
                                 </select>
-                                <span>选择学校</span>
-                                <select>
-                                    <option value ="选择学校"></option>
-                                    <option value ="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
+                                <!--<span>选择学校</span>-->
+                                <select name="" id="school">
+
                                 </select>
                             </form>
                         </div>
@@ -164,4 +173,5 @@
     </div>
 </div>
 </body>
+<script type="text/javascript" src="../style/js/public_top_more.js"></script>
 </html>
